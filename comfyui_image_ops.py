@@ -63,6 +63,7 @@ def save_image(img: torch.Tensor, path, prompt=None, extra_pnginfo: dict = None)
     return {"filename": filename, "subfolder": subfolder, "type": "output"}
 
 
+'''removed by remux
 @register_node("JWImageLoadRGB", "Image Load RGB")
 class _:
     CATEGORY = "jamesWalker55"
@@ -79,8 +80,9 @@ class _:
 
         img = load_image(path)
         return (img,)
+'''
 
-
+'''removed by remux
 @register_node("JWImageLoadRGBA", "Image Load RGBA")
 class _:
     CATEGORY = "jamesWalker55"
@@ -101,8 +103,9 @@ class _:
         mask = 1 - mask  # invert mask
 
         return (color, mask)
+'''
 
-
+'''removed by remux
 @register_node("JWLoadImagesFromString", "Load Images From String")
 class _:
     CATEGORY = "jamesWalker55"
@@ -152,8 +155,9 @@ class _:
         imgs = torch.cat(imgs, dim=0)
 
         return (imgs,)
+'''
 
-
+'''removed by remux
 @register_node("JWImageSaveToPath", "Image Save To Path")
 class _:
     CATEGORY = "jamesWalker55"
@@ -209,7 +213,7 @@ class _:
                 )
 
         return ()
-
+'''
 
 @register_node("JWImageExtractFromBatch", "Image Extract From Batch")
 class _:

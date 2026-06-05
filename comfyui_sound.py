@@ -116,7 +116,7 @@ def write_audio_comment(path: str | Path, comment: str):
     f.comments = comment
     f.save()
 
-
+'''removed by remux
 @register_node("JWLoadAudio", "Audio Load")
 class _:
     CATEGORY = "jamesWalker55"
@@ -167,7 +167,7 @@ class _:
             mtime = None
 
         return (mtime, path, *args)
-
+'''
 
 @register_node("JWAudioBlend", "Audio Blend")
 class _:
@@ -274,7 +274,7 @@ class ResultItem(TypedDict):
     subfolder: str
     type: Literal["output"]
 
-
+'''removed by remux
 @register_node("JWAudioSaveToPath", "Audio Save to Path")
 class _:
     CATEGORY = "jamesWalker55"
@@ -348,3 +348,4 @@ class _:
                     )
 
         return {"ui": {"audio": results}}
+'''
